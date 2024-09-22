@@ -27,3 +27,26 @@
 }
 
 /* profile pic background color #bfc4c8 */
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #f7f7f7;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background-color: #000;
+        border-radius: 20px;
+        /* border: 2px solid #3b35a9; */
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #000;
+      }
+      /* 3b35a9 */
+    .idee{
+      transform: scale(0.4);
+    }

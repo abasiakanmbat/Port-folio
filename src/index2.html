@@ -11,13 +11,13 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-  
-  <body class=" bod" >
+
+<body class=" bod">
   <div class="2xl:w-[1400px] px-10 mx-auto">
     <!-- Navbar -->
 
-    <nav class="flex justify-between py-6">
-      <h1>Abasiakan Mbat</h1>
+    <nav class="flex justify-between p-6 px-9">
+      <h1 class="hidden md:block">Abasiakan Mbat</h1>
       <div class=" basis-[40%]  flex justify-between md:basis-[20%]">
         <a href="">Home</a>
         <a href="#about">About</a>
@@ -31,7 +31,7 @@
 
     <!-- Hero Section  -->
 
-    <div class="flex  py-10">
+    <div class="flex flex-col-reverse md:flex-row   py-10">
       <div class="basis-[60%]  flex flex-col justify-center pl-20 ">
         <h3>Hello I'm Abasiakan,</h3>
         <h1 class="text-[3rem] font-extrabold">Front-End <br>Website Developer</h1>
@@ -49,7 +49,7 @@
     <div class="py-10">
 
       <div class="flex my-5">
-        <h1 id="about"  class="text-[2rem] font-extrabold pr-5 basis-[15%]  text-end ">about</h1>
+        <h1 id="about" class="text-[2rem] font-extrabold pr-5 basis-[15%]  text-end ">about</h1>
         <div class=" translate-y-5 border-t-8 basis-[75%] "></div>
       </div>
 
@@ -61,7 +61,7 @@
       </div>
 
 
-      <div class="flex justify-between w-[75%] mx-auto mb-10">
+      <div class="flex flex-col-reverse md:flex-row gap-10 md:justify-between w-[75%] mx-auto mb-10">
         <div>
           <h2 class="text-[2rem] font-bold">TailwindCSS</h2>
           <p class=" underline">60+ Hours Experience</p>
@@ -84,7 +84,7 @@
     <div class="pb-10">
 
       <div class="flex my-5">
-        <h1 class="text-[2rem] font-extrabold pr-5 basis-[15%]  text-end ">work</h1>
+        <h1 id="work" class="text-[2rem] font-extrabold pr-5 basis-[15%]  text-end ">work</h1>
         <div class=" translate-y-5 border-t-8 basis-[75%] "></div>
       </div>
 
@@ -95,25 +95,46 @@
         orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
       </div>
       <!-- bg-[#3b35a9] -->
-      <div class="flex w-[75%]  mx-auto">
-<div>
-        <div class="w-[538.6px] h-[300px] bg-[#3b35a9] flex overflow-hidden pt-10 gap-5 justify-center">
-          <div class="text-white">
-            <h2 class="text-[1rem] pb-2">FuniroFurniture</h2>
-            <p class="text-[0.8rem]"> Interior landing page </p>
-          </div>
-          <div>
-            <img class="w-[300px] drop-shadow-2xl shadow-2xl shadow-black" src="./asset/Furniro.jpg" alt="">
+      <div class="flex md:w-[90%] justify-between mx-auto overflow-auto ">
+        <div class="cursor-pointer " onclick="location.href = ''">
+          <div class="w-[538.6px] scale-[.5] md:scale-[] h-[300px] bg-[#3b35a9] flex overflow-hidden pt-10 gap-5 justify-center">
+            <div class="text-white">
+              <h2 class="text-[1rem] pb-2">Abasiakan</h2>
+              <p class="text-[0.8rem]"> Front-End Developer </p>
+            </div>
+            <div>
+              <img class="w-[300px] drop-shadow-2xl shadow-2xl shadow-black" src="./asset/Abasiakan Portfolio.jpg" alt="">
 
+            </div>
+          </div>
+          <div class="py-5 hidden md:block">
+            <h2 class="spaceG font-bold">
+              PORTFOLIO
+            </h2>
+            <p class=""><span class="spaceG pr-2">HTML </span> <span class="spaceG">TAILWINDCSS</span> </p>
           </div>
         </div>
-        <div class="py-5">
-          <h2 class="spaceG font-bold">
-            E - CORMERCE WEBSITE
-          </h2>
-          <p class=""><span class="spaceG pr-2">REACT </span> <span class="spaceG">TYPESCRIPT</span> </p>
+
+
+
+        <div class=" ">
+          <div class="w-[538.6px] scale-[.5] md:scale-[] h-[300px] bg-[#3b35a9] flex overflow-hidden pt-10 gap-5 justify-center">
+            <div class="text-white">
+              <h2 class="text-[1rem] pb-2">FuniroFurniture</h2>
+              <p class="text-[0.8rem]"> Interior landing page </p>
+            </div>
+            <div>
+              <img class="w-[300px] drop-shadow-2xl shadow-2xl shadow-black" src="./asset/Furniro.jpg" alt="">
+
+            </div>
+          </div>
+          <div class="py-5 hidden md:block">
+            <h2 class="spaceG font-bold">
+              E - CORMERCE WEBSITE
+            </h2>
+            <p class=""><span class="spaceG pr-2">REACT </span> <span class="spaceG">TYPESCRIPT</span> </p>
+          </div>
         </div>
-      </div>
       </div>
 
     </div>
@@ -131,10 +152,11 @@
       <!-- Contact Body -->
 
       <div id="about" class="spaceG w-[75%] mx-auto my-20">
-        I would love to hear about your project and how I can help. Please fill in the form, and I’ll get back to you as soon as possible.
+        I would love to hear about your project and how I can help. Please fill in the form, and I’ll get back to you as
+        soon as possible.
       </div>
 
-      <form action=""spaceG class=" flex flex-col  my-10 mx-auto w-[60%]">
+      <form action="" spaceG class=" flex flex-col  my-10 mx-auto w-[60%]">
         <label for="spaceG name">Name</label>
         <input type="text" class="mb-10 border-b-4 border-[#221F1F]" name="name" id="">
 
@@ -142,11 +164,11 @@
         <label for="email">Email</label>
         <input class="border-b-4 mb-10 border-[#221F1F]" type="email" name="" id="">
 
-        <label for="" >Message</label>
+        <label for="">Message</label>
 
         <textarea class="resize-none border-b-4 border-[#221F1F]" id=" " name=" " rows="4" cols="50">
-        
-          
+
+
         </textarea>
         <input class="spaceG border-b-4 border-[#221F1F] w-fit pt-10 mx-auto p-5 " type="button" value="SEND MESSAGE">
       </form>
